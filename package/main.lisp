@@ -98,4 +98,14 @@
    :weight*
    :shuffle
    :lookup-in-entry
-   :lookup-in-table))
+   :lookup-in-table
+   ;; Seasoned Schemer
+   :two-in-a-row?
+   :sum-of-prefixes
+   :scramble
+   ))
+
+
+(defpackage :schemer-series/tests
+  (:use :cl :fiveam
+	:schemer-series))
