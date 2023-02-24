@@ -22,7 +22,7 @@
 	       (:module "seasoned-schemer"
                 :components
 			((:file "chapter11")
-			 ;; (:file "chapter12")
+			 (:file "chapter12")
 			 ;; (:file "chapter13")
 			 ;; (:file "chapter14")
 			 ;; (:file "chapter15")
@@ -59,7 +59,7 @@
                 :components
                 ((:file "main")
 		 (:file "chapter11")
-		 ;; (:file "chapter2")
+		 (:file "chapter12")
 		 ;; (:file "chapter3")
 		 ;; (:file "chapter4")
 		 ;; (:file "chapter5")

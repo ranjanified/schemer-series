@@ -1,4 +1,4 @@
-;;; Chapter 1
+;;; Chapter 11
 (in-package :schemer-series)
 
 (defun is-first? (a lat)

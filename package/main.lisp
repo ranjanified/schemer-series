@@ -100,9 +100,15 @@
    :lookup-in-entry
    :lookup-in-table
    ;; Seasoned Schemer
+   ;; Chapter 11
    :two-in-a-row?
    :sum-of-prefixes
    :scramble
+
+   ;; chapter 12
+   :multi-rember
+   :multi-rember-f
+   :member-?
    ))
 
 

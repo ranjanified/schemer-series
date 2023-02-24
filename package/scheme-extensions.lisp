@@ -17,3 +17,6 @@
 (alias number? numberp)
 (alias zero? zerop)
 (alias even? evenp)
+
+
+
