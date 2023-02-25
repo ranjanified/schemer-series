@@ -109,6 +109,9 @@
    :multi-rember
    :multi-rember-f
    :member-?
+   :uni-on
+   :protected-two-in-a-row?
+   :protected-scramble
    ))
 
 
