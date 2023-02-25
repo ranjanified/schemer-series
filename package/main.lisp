@@ -112,6 +112,11 @@
    :uni-on
    :protected-two-in-a-row?
    :protected-scramble
+
+   ;; Chapter 13
+   :intersect-all
+   :rember-beyond-first
+   :rember-upto-last
    ))
 
 
