@@ -117,6 +117,32 @@
    :intersect-all
    :rember-beyond-first
    :rember-upto-last
+
+   ;; Chapter 14
+   :left-most*
+   :remberl*
+   :depth*
+   :rm
+
+   ;; Chapter 15
+   :gourmet
+   :gourmand
+   :dinerR
+   :omnivore
+   :gobbler
+   :nibbler
+   :glutton
+
+   ;; Chapter 16
+   :sweet-tooth
+   :sweet-toothL
+   :sweet-toothR
+   :deep
+   :Ns
+   :Rs
+   :deepR
+   :deepM
+   :find
    ))
 
 
