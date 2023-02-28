@@ -53,4 +53,6 @@
 	       (list (list (list (list (list SCHEMER-SERIES::'pizza))))))))
 
 (test find-l
-  (is (eqlist? (let (())))))
+  (is (eqlist? (let ((x 1))
+		 (find-l 2 '() '()))
+	       '())))

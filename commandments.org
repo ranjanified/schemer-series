@@ -1,0 +1,41 @@
+* Commandments
+#+begin_verse
+*12.* Use **/(letrec ...)/** to remove arguments that do not change for recursive applications
+#+end_verse
+
+#+begin_verse
+*13.* Use **/(letrec ...)/** to hide and to protect functions
+#+end_verse
+
+#+begin_verse
+*14.* Use **/(letcc ...)/** to return values abruptly and promptly
+#+end_verse
+
+#+begin_verse
+*15.* Use **/(let ...)/** to name the values of repeated expressions in a function definition if they may be evaluated twice for one and the same use of the function
+#+end_verse
+
+#+begin_verse
+*16.* Use **/(set! ...)/** only with names defined in (let ...)s. 
+#+end_verse
+
+#+begin_verse
+*17.* Use **/(set! x ...)/** for (let ((x ...)) ...) only if there is at least one (lambda ...) between it and the (let ((x ...)) ...), or if the new value for x is a function that refers to x. 
+#+end_verse
+
+#+begin_verse
+*18.* Use **/(set! x ...)/** only when the value that x refers to is no longer needed. 
+#+end_verse
+
+#+begin_verse
+*19.* Use **/(set! ...)/** to remember valuable things between two distinct uses of a function
+#+end_verse
+
+#+begin_verse
+*20.* When thinking about a value created with **/(letcc ...)/**, write down the function that is equivalent but does not forget. Then, when you use it, remember to forget.
+#+end_verse
+
+
+#+options: toc:nil
+#+options: num:nil
+# https://github.com/fniessen/refcard-org-mode/blob/master/README.org

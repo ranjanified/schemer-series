@@ -1,18 +1,21 @@
 ;;; Chapter 16
 (in-package :schemer-series)
 
+(defvar last-s 'angelfood)
+(defvar ingredients '())
+(defvar Ns '())
+(defvar Rs '())
+
 (defun sweet-tooth (food)
   (cons food (cons 'cake '())))
 
 (defun sweet-toothL (food)
-  (let ((last 'angelfood))
-    (setq last food)
-    (cons food (cons 'cake '()))))
+  (setq last-s food)
+  (cons food (cons 'cake '())))
 
 (defun sweet-toothR (food)
-  (let ((ingredients '()))
-    (setq ingredients (cons food ingredients))
-    (cons food (cons 'cake '()))))
+  (setq ingredients (cons food ingredients))
+  (cons food (cons 'cake '())))
 
 
 (defun deep (m)
@@ -20,10 +23,7 @@
     ((zero? m) 'pizza)
     (t (cons (deep (sub1 m)) '()))))
 
-(defvar Ns '())
-(defvar Rs '())
-
-(defun deepR (m &optional type)
+(defun deepR (m)
   (let ((R (deep m)))
     (setq Ns (cons m Ns))
     (setq Rs (cons R Rs))
@@ -44,3 +44,21 @@
 	(setq Ns (cons n Ns))
 	(setq Rs (cons result Rs))
 	result)))
+
+(defun L (length)
+  (lambda (l)
+    (cond
+      ((null? l) 0)
+      (t (add1 (funcall length (cdr l)))))))
+
+(defun Y! (L)
+  (let ((h (lambda (_) '())))
+    (setq h (funcall L (lambda (arg) (funcall h arg))))
+    h))
+
+(defvar l-length
+  (let ((h (lambda (_) 0)))
+    (setq h (L (lambda (arg) (funcall h arg))))
+    h))
+
+(defvar ll-length (Y! #'L))
