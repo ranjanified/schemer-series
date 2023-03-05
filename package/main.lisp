@@ -143,6 +143,14 @@
    :deepR
    :deepM
    :find-l
+
+   ;; Chapter 17
+   :deep-M
+   :consC
+   :deep-C
+   :supercounter
+   :rember1*C
+   :rember1*C2
    ))
 
 

@@ -4,12 +4,12 @@
 (in-suite chapter16)
 
 (test sweet-tooth
-  (is (eqlist? (let ((x 'chocolate))
-		 (sweet-tooth x))
-	       (list 'chocolate schemer-series::'cake)))
-  (is (eqlist? (let ((x 'fruit))
-		 (sweet-tooth x))
-	       (list 'fruit schemer-series::'cake))))
+      (is (eqlist? (let ((x 'chocolate))
+		     (sweet-tooth x))
+		   (list 'chocolate schemer-series::'cake)))
+      (is (eqlist? (let ((x 'fruit))
+		     (sweet-tooth x))
+		   (list 'fruit schemer-series::'cake))))
 
 (test sweet-toothL
   (is (eqlist? (let ((food 'chocolate))
