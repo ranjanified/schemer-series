@@ -151,6 +151,32 @@
    :supercounter
    :rember1*C
    :rember1*C2
+
+   ;; Chapter 18
+   :lots
+   :add-at-end
+   :add-at-end-too
+   :kar
+   :kdr
+   :kons
+   :bakers-dozen
+   :same?
+   :finite-length
+
+   ;; Chapter 19
+   :deepB
+   :deep&Co
+   :deep&CoB
+   :start-it
+   :walk
+   :waddle
+   :start-it2
+   :get-next
+   :two-in-a-row*?
+
+   ;; Chapter 20
+   :lookup
+   :extend
    ))
 
 
